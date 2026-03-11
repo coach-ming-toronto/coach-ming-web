@@ -24,21 +24,17 @@
         .hero .slogan-cn { font-size: 26px; font-weight: 600; margin: 20px 0 10px; color: var(--apple-black); }
         .hero .slogan-en { font-size: 18px; color: var(--apple-grey); margin-bottom: 40px; }
         .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; }
-        .service-card { background: var(--apple-light); padding: 40px; border-radius: 24px; transition: transform 0.3s ease; }
+        .service-card { background: var(--apple-light); padding: 40px; border-radius: 24px; }
         .service-card h3 { font-size: 22px; margin: 0; color: var(--apple-black); }
         .service-card .en-title { font-size: 14px; color: var(--accent-blue); font-weight: 600; margin-bottom: 20px; text-transform: uppercase; display: block; }
         .service-card ul { padding: 0; list-style: none; color: #444; font-size: 15px; }
         .service-card li { margin-bottom: 12px; padding-left: 20px; position: relative; }
         .service-card li::before { content: "•"; position: absolute; left: 0; color: var(--accent-blue); font-weight: bold; }
         .photo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-        .photo-card { border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.06); background: #fff; }
-        .photo-card img { width: 100%; display: block; height: auto; object-fit: cover; }
-        .faq-item { border-bottom: 1px solid #eee; padding: 25px 0; cursor: pointer; }
-        .faq-q { font-size: 18px; font-weight: 600; display: flex; justify-content: space-between; }
-        .faq-a { display: none; padding-top: 15px; color: var(--apple-grey); font-size: 15px; }
-        .faq-item.active .faq-a { display: block; }
-        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2); z-index: 2000; text-decoration: none; }
-        @media (max-width: 600px) { .hero h1 { font-size: 36px; } .hero .slogan-cn { font-size: 22px; } }
+        .photo-card { border-radius: 18px; overflow: hidden; box-shadow: 0 8px 20px rgba(0,0,0,0.06); background: #eee; min-height: 200px; }
+        .photo-card img { width: 100%; display: block; height: auto; }
+        .whatsapp-btn { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px rgba(0,0,0,0.2); z-index: 2000; }
+        @media (max-width: 600px) { .hero h1 { font-size: 36px; } }
     </style>
 </head>
 <body>
@@ -57,43 +53,35 @@
             <h1>Precision in Motion,<br>Excellence in Results.</h1>
             <p class="slogan-cn">精確動作，卓越成效。</p>
             <p class="slogan-en">Coach Ming | Toronto & Markham Personal Trainer</p>
-            <p style="max-width: 800px; margin: 0 auto; color: var(--apple-grey); font-size: 17px; line-height: 1.8;">
-                提供專業一對一及一對二私人訓練，透過科學化姿勢糾正與週期化計劃，助您穩定達成健身目標。<br>
-                Professional 1-on-1 and 1-on-2 coaching focusing on scientific postural correction and structured training programs.
-            </p>
         </div>
     </header>
 
     <section id="services" style="background: var(--apple-light);">
         <div class="container">
             <h2 class="section-title">Training Programs</h2>
-            <p class="section-subtitle">專業課程分類</p>
             <div class="service-grid">
                 <div class="service-card">
                     <h3>一對一私人訓練</h3>
                     <span class="en-title">1-on-1 Personal Training</span>
                     <ul>
-                        <li>個人化目標定制計劃 (Tailored training plans)</li>
-                        <li>全程專注動作細節與安全 (Focus on form & safety)</li>
-                        <li>定期進度評估與調整 (Regular progress assessments)</li>
+                        <li>個人化目標定制計劃 (Tailored plans)</li>
+                        <li>高專注度動作糾正 (Form correction)</li>
                     </ul>
                 </div>
                 <div class="service-card">
                     <h3>一對二小組訓練</h3>
                     <span class="en-title">1-on-2 Semi-Private</span>
                     <ul>
-                        <li>與伴侶或親友共同進步 (Train with a partner)</li>
-                        <li>共享課酬，降低訓練成本 (Cost-effective solution)</li>
-                        <li>同步獲得教練專業指導 (Expert coaching for both)</li>
+                        <li>與伴侶或親友共同訓練 (Train with a partner)</li>
+                        <li>高性價比方案 (Cost-effective)</li>
                     </ul>
                 </div>
                 <div class="service-card">
                     <h3>線上遠程指導</h3>
                     <span class="en-title">Online Coaching</span>
                     <ul>
-                        <li>突破地理位置限制 (Location independent)</li>
-                        <li>每週訓練課表更新 (Weekly program updates)</li>
-                        <li>宏觀營養飲食建議 (Nutrition & macro guidance)</li>
+                        <li>突破地域限制 (Global access)</li>
+                        <li>每週課表與飲食建議 (Weekly plans)</li>
                     </ul>
                 </div>
             </div>
@@ -103,7 +91,6 @@
     <section id="results">
         <div class="container">
             <h2 class="section-title">Student Results</h2>
-            <p class="section-subtitle">學員訓練成果</p>
             <div class="photo-grid">
                 <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/result1%20(1).JPEG"></div>
                 <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/result1%20(2).JPEG"></div>
@@ -111,7 +98,6 @@
                 <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/result1%20(4).JPEG"></div>
                 <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/result1%20(5).JPEG"></div>
                 <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/result1%20(6).JPEG"></div>
-                <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/result1%20(7).JPEG"></div>
             </div>
         </div>
     </section>
@@ -119,7 +105,6 @@
     <section id="reviews" style="background: var(--apple-light);">
         <div class="container">
             <h2 class="section-title">Success Stories</h2>
-            <p class="section-subtitle">學員真實評價</p>
             <div class="photo-grid">
                 <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/IMG_9273.PNG"></div>
                 <div class="photo-card"><img src="iCloud%20%E7%9B%B8%E7%89%87/IMG_9275.PNG"></div>
@@ -128,35 +113,13 @@
         </div>
     </section>
 
-    <section id="faq">
-        <div class="container" style="max-width: 800px;">
-            <h2 class="section-title">FAQ</h2>
-            <p class="section-subtitle">常見問題解答</p>
-            <div class="faq-item">
-                <div class="faq-q">實體課的上課地點？ (Training Locations?) <span>+</span></div>
-                <div class="faq-a">實體訓練主要位於 Markham 及 Richmond Hill 地區。具體細節將於諮詢時確認。</div>
-            </div>
-            <div class="faq-item">
-                <div class="faq-q">是否包含飲食建議？ (Is nutrition included?) <span>+</span></div>
-                <div class="faq-a">是的。我們會根據您的目標提供科學化的宏觀營養建議。</div>
-            </div>
-        </div>
-    </section>
-
     <footer style="padding: 60px 0; text-align: center; color: var(--apple-grey); font-size: 14px; border-top: 1px solid #eee;">
         <p>&copy; 2026 Coach Ming Toronto. | Contact: +1 437-663-0425</p>
     </footer>
 
-    <a href="https://wa.me/14376630425?text=Hello%20Ming,%20I%20am%20interested%20in%20your%20training%20programs." class="whatsapp-btn" target="_blank">
+    <a href="https://wa.me/14376630425" class="whatsapp-btn" target="_blank">
         <svg style="width: 28px; height: 28px; fill: white;" viewBox="0 0 448 512"><path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.6-2.8-23.6-8.7-45-27.7-16.6-14.8-27.8-33.1-31.1-38.6-3.2-5.5-.3-8.5 2.5-11.2 2.5-2.5 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.3 1.9-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.5 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.7z"/></svg>
     </a>
 
-    <script>
-        document.querySelectorAll('.faq-item').forEach(item => {
-            item.addEventListener('click', () => {
-                item.classList.toggle('active');
-            });
-        });
-    </script>
 </body>
 </html>
